@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  justify-content: flex-end;
+  color: #fff;
+}
+.navMenu {
+  align-content: center;
+  display: flex;
+  width: 70%;
+  padding: 8px 20px 0px;
+}
