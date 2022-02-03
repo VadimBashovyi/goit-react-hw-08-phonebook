@@ -1,7 +1,7 @@
 import UserMenu from "../UserMenu/UserMenu"
 import { getUserIsLoggedIn } from "../../redux/auth/auth-selectors"
 import { useSelector } from 'react-redux';
-import styled from "./Header.module.css"
+import styled from "./Header.module.scss"
 
 
 

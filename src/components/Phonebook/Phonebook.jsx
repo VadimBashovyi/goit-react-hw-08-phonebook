@@ -5,7 +5,7 @@ import { addContacts } from '../../utilits/Api'
 import { getContacts} from "../../redux/phonebook/redux-selector"
 
 
-import styles from "./Phonebook.module.css";
+import styles from "./Phonebook.module.scss";
 
 export default function Phonebook() {
   const [name, setName] = useState('')

@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from 'react-redux';
-import styles from "./Filter.module.css";
+import styles from "./Filter.module.scss";
 import { contactFilter} from "../../redux/phonebook/slice-filter"
 
 export default function Filter() {

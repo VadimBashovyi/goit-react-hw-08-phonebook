@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux'
 import { register } from '../../redux/auth/auth-operations'
-import styled from '../RegistrationForm/RegistrationForm.module.css'
+import styled from '../RegistrationForm/RegistrationForm.module.scss'
 import { Link } from 'react-router-dom'
 
 export default function RegistrForm() {

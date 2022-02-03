@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import styles from "./ContactItem.module.css";
+import styles from "./ContactItem.module.scss";
 import { deletedContact } from "../../utilits/Api"
 
 export default function ContactItem({ id, name, number }) {

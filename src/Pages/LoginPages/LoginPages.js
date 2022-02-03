@@ -1,5 +1,5 @@
 import LoginIn from '../../components/LoginIn/LoginIn'
-import styled from '../../Pages/LoginPages/LoginPages.module.css'
+import styled from '../../Pages/LoginPages/LoginPages.module.scss'
 
 export default function UserLoginPages() {
   return (

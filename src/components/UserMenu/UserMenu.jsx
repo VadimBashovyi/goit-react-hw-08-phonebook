@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { getUserEmail} from '../../redux/auth/auth-selectors';
 import { logOut } from "../../redux/auth/auth-operations"
-import styled from "./UserMenu.module.css"
+import styled from "./UserMenu.module.scss"
 import { ImEnter } from 'react-icons/im';
 
 

@@ -1,5 +1,5 @@
 import ContactsForm from '../../components/ContactsForm/ContactsForm'
-import styled from './ContactsAdd.module.css'
+import styled from './ContactsAdd.module.scss'
 
 export default function ContactsAdd() {
   return (

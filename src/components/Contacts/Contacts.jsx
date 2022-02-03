@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux';
-import styles from "./Contacts.module.css";
+import styles from "./Contacts.module.scss";
 import ContactItem from "../ContactItem/ContactItem";
 import { getFilteredContacts } from "../../redux/phonebook/redux-selector"
 import { useEffect } from 'react';

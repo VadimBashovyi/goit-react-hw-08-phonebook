@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux'
 import { logIn } from '../../redux/auth/auth-operations'
-import styled from './LoginIn.module.css'
+import styled from './LoginIn.module.scss'
 import { Link } from 'react-router-dom'
 
 export default function LoginIn() {

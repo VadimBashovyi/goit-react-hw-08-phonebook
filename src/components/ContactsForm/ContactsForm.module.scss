@@ -1,0 +1,83 @@
+.userForm {
+  @media screen and (min-width: 320px) {
+    font-size: 14px;
+  }
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1.167;
+  letter-spacing: 0.01em;
+}
+.userLabel {
+  display: flex;
+  flex-direction: column;
+}
+.userInput {
+  @media screen and (min-width: 320px) {
+    height: 25px;
+  }
+  padding-left: 20px;
+  margin-bottom: 20px;
+  height: 40px;
+  background-color: #f2f4f3;
+  border: 2px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.userInput:focus {
+  outline: none;
+  border: 2px solid #1ce08f;
+}
+.userText {
+  margin-bottom: 8px;
+}
+.container {
+  @media screen and (min-width: 320px) {
+    min-width: 0px;
+    max-width: 260px;
+  }
+  margin: auto;
+  min-width: 350px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(242, 244, 243, 0.82);
+  box-shadow: rgb(0 0 0 / 12%) 0px 1px 1px, rgb(0 0 0 / 6%) 0px 4px 4px,
+    rgb(0 0 0 / 16%) 1px 4px 6px;
+}
+.btnAddContactas {
+  @media screen and (min-width: 320px) {
+    width: 90px;
+  }
+  width: 120px;
+  height: 30px;
+  margin: 0 auto;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.167;
+  letter-spacing: 0.01em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btnAddContactas:focus,
+.btnAddContactas:hover {
+  background-color: #1ce08f;
+}
+.userLink {
+  margin: 40px auto;
+  font-size: 23px;
+  line-height: 1.167;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.userLink:focus,
+.userLink:hover {
+  color: #1ce08f;
+}

@@ -14,10 +14,16 @@
   letter-spacing: 0.03em;
 }
 .userText {
+  @media screen and (min-width: 320px) {
+    display: none;
+  }
   margin-right: 40px;
   font-size: 25px;
 }
 .userLogin {
+  @media screen and (min-width: 320px) {
+    color: #5ed8dead;
+  }
   display: flex;
   align-items: center;
   font-family: inherit;

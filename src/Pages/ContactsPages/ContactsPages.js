@@ -3,7 +3,7 @@ import { ImUserPlus } from 'react-icons/im'
 import Filter from '../../components/Filter/Filter'
 import { useRouteMatch } from 'react-router-dom'
 import { Link } from 'react-router-dom'
-import styled from './ContactsPages.module.css'
+import styled from './ContactsPages.module.scss'
 import { useSelector } from 'react-redux'
 
 export default function ContactsPages() {

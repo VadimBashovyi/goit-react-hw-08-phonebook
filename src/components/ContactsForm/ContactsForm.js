@@ -5,7 +5,7 @@ import { useHistory } from 'react-router-dom'
 import toast from 'react-hot-toast'
 import { addContacts } from '../../utilits/Api'
 import { getContacts } from '../../redux/phonebook/redux-selector'
-import styled from '../ContactsForm/ContactsForm.module.css'
+import styled from '../ContactsForm/ContactsForm.module.scss'
 import { Link } from 'react-router-dom'
 
 export default function ContactsForm() {

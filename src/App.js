@@ -6,11 +6,11 @@ import LoginPages from './Pages/LoginPages/LoginPages'
 import RegistrPages from './Pages/RegistrPages/RegistrPages'
 import PublicRoute from './components/PublicRoute'
 import PrivateRoute from './components/PrivateRoute'
+import { ToastContainer } from 'react-toastify'
 // import LoginIn from './components/LoginIn/LoginIn'
 import Header from './components/Header/Header'
-import { ToastContainer } from 'react-toastify'
 // import RegistrForm from './components/RegistrationForm/RegistrationForm'
-import styled from './App.css'
+import styled from './App.scss'
 import Container from './components/Container/Container'
 // import Phonebook from './components/Phonebook/Phonebook'
 // import Contacts from './components/Contacts/Contacts'
@@ -45,7 +45,7 @@ export default function App() {
               <PrivateRoute path="/contacts">
                 <ContactsPages />
               </PrivateRoute>
-              <Redirect to="/login" />
+              <Redirect to="/contacts" />
             </Switch>
             <ToastContainer
               position="top-center"

@@ -1,4 +1,8 @@
 .list {
+  @media screen and (min-width: 320px) {
+    padding-left: 0px;
+    max-width: 230px;
+  }
   padding: 0;
   margin: 0;
   padding-left: 40px;
@@ -6,6 +10,10 @@
   margin-right: auto;
 }
 .item {
+  @media screen and (min-width: 320px) {
+    max-width: 260px;
+    font-size: 11px;
+  }
   display: flex;
   align-items: center;
 }

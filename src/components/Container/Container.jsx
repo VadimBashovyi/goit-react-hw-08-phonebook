@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import styles from "./Container.module.css";
+import styles from "./Container.module.scss";
 
 function Container({ title = "", children }) {
   return (
