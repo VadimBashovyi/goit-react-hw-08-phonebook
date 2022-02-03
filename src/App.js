@@ -45,7 +45,7 @@ export default function App() {
               <PrivateRoute path="/contacts">
                 <ContactsPages />
               </PrivateRoute>
-              <Redirect to="/contacts" />
+              <Redirect to="/login" />
             </Switch>
             <ToastContainer
               position="top-center"
