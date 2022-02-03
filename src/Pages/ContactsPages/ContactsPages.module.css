@@ -1,0 +1,100 @@
+.sections {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.container {
+  display: flex;
+  margin: auto auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.03em;
+  padding-bottom: 6px;
+}
+.six {
+  padding: 50px 20px;
+  text-align: center;
+}
+.six h1 {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  line-height: 1;
+  padding: 0.4em 1em 0.55em;
+}
+.six h1:before,
+.six h1:after {
+  content: '';
+  position: absolute;
+  width: 60%;
+  height: 0.1em;
+  background: #026773;
+}
+.six h1:before {
+  left: 0;
+  top: 0;
+}
+.six h1:after {
+  right: 0;
+  bottom: 0;
+}
+.six h1 span:before,
+.six h1 span:after {
+  content: '';
+  position: absolute;
+  width: 0.65em;
+  height: 0.65em;
+  border: 0.1em solid #026773;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+.six h1 span:before {
+  top: -0.55em;
+  left: -0.325em;
+}
+.six h1 span:after {
+  bottom: -0.55em;
+  right: -0.325em;
+}
+@media (max-width: 600px) {
+  .six h1 {
+    font-size: 2em;
+  }
+}
+@media (max-width: 450px) {
+  .six h1 {
+    font-size: 1.5em;
+  }
+}
+.userLink {
+  position: absolute;
+  color: #0d27143d;
+  cursor: pointer;
+  background: inherit;
+  border: none;
+  top: 25%;
+  left: 80%;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.userLink:focus,
+.userLink:hover {
+  color: #1ce08f;
+}
+
+.backContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  min-width: 350px;
+  height: 100%;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgb(216 237 226 / 82%);
+  box-shadow: rgb(0 0 0 / 12%) 0px 1px 1px, rgb(0 0 0 / 6%) 0px 4px 4px,
+    rgb(0 0 0 / 16%) 1px 4px 6px;
+}

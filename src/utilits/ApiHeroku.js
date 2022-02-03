@@ -1,21 +1,19 @@
-import axios from 'axios'
+// import axios from 'axios'
+// axios.defaults.baseURL = 'https://connections-api.herokuapp.com'
+// export async function fetchContacts() {
+//   const { data } = await axios.get('/contacts')
+//   return data
+// }
 
-axios.defaults.baseURL = 'https://connections-api.herokuapp.com'
+// export async function saveContacts(value) {
+//   const { data } = await axios.post('/contacts', {
+//     name: value.name,
+//     number: value.number,
+//   })
+//   return data
+// }
 
-export async function fetchContacts() {
-  const { data } = await axios.get('/contacts')
-  return data
-}
-
-export async function saveContacts(value) {
-  const { data } = await axios.post('/contacts', {
-    name: value.name,
-    number: value.number,
-  })
-  return data
-}
-
-export async function deleteContact(value) {
-  await axios.delete(`/contacts/${value.id}`)
-  return value.id
-}
+// export async function deleteContact(value) {
+//   await axios.delete(`/contacts/${value.id}`)
+//   return value.id
+// }

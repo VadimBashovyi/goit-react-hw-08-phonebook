@@ -8,7 +8,7 @@ const sliceItems = createSlice({
     [getAllContacts.fulfilled]: (_, { payload }) => payload,
     [addContacts.fulfilled]: (state, { payload }) => [...state, payload],
     [deletedContact.fulfilled]: (state, { payload }) =>
-      state.filter((contact) => contact.id !== payload.id),
+      state.filter((contact) => contact.id !== payload),
   },
 })
 

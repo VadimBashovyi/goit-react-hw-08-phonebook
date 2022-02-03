@@ -2,7 +2,12 @@
   padding: 0;
   margin: 0;
   padding-left: 40px;
-  text-align-last: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+.item {
+  display: flex;
+  align-items: center;
 }
 
 .item:not(:last-child) {

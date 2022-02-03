@@ -1,6 +1,7 @@
 import { useDispatch } from 'react-redux'
 import { logIn } from '../../redux/auth/auth-operations'
 import styled from './LoginIn.module.css'
+import { Link } from 'react-router-dom'
 
 export default function LoginIn() {
   const dispatch = useDispatch()
@@ -44,6 +45,9 @@ export default function LoginIn() {
         <button type="submit" className={styled.userBtnSubmit}>
           Login
         </button>
+        <Link className={styled.userLink} to="/register">
+          <button className={styled.userBtnSubmit}>Registration</button>
+        </Link>
       </form>
     </div>
   )

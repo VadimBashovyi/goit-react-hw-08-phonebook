@@ -1,11 +1,14 @@
 .container {
   display: flex;
   justify-content: flex-end;
-  color: #fff;
+  color: rgba(242, 244, 243, 0.82);
 }
 .navMenu {
   align-content: center;
   display: flex;
-  width: 70%;
+  width: 58%;
   padding: 8px 20px 0px;
+}
+.title {
+  font-size: 60px;
 }

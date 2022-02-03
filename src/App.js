@@ -1,36 +1,54 @@
 import { useSelector, useDispatch } from 'react-redux'
 import { useEffect } from 'react'
+import ContactsPages from './Pages/ContactsPages/ContactsPages'
+import ContactsAdd from './Pages/ContactsAdd/ContactsAdd'
+import LoginPages from './Pages/LoginPages/LoginPages'
+import RegistrPages from './Pages/RegistrPages/RegistrPages'
 import PublicRoute from './components/PublicRoute'
-import LoginIn from './components/LoginIn/LoginIn'
+import PrivateRoute from './components/PrivateRoute'
+// import LoginIn from './components/LoginIn/LoginIn'
 import Header from './components/Header/Header'
+// import RegistrForm from './components/RegistrationForm/RegistrationForm'
 import styled from './App.css'
 import Container from './components/Container/Container'
-import Phonebook from './components/Phonebook/Phonebook'
-import Contacts from './components/Contacts/Contacts'
-import Filter from './components/Filter/Filter'
-
-import { Switch } from 'react-router-dom'
+// import Phonebook from './components/Phonebook/Phonebook'
+// import Contacts from './components/Contacts/Contacts'
+// import Filter from './components/Filter/Filter'
+import { Redirect, Switch } from 'react-router-dom'
+import { fetchCurrentUser } from './redux/auth/auth-operations'
+import { getFetchingCurrentUser } from './redux/auth/auth-selectors'
 
 export default function App() {
-  const filterCon = useSelector((state) => state.contacts.items)
+  const dispath = useDispatch()
+  const fetchingCurrentUser = useSelector(getFetchingCurrentUser)
+  useEffect(() => {
+    dispath(fetchCurrentUser())
+  }, [dispath])
 
   return (
-    <div className={styled.allContainer}>
-      <Header />
-      <div className={styled.app}>
-        <Switch>
-          {/* <PublicRoute path="/register" restricted> */}
-          <LoginIn />
-          {/* </PublicRoute> */}
-          {/* <Container title="Phonebook">
-          <Phonebook />
+    !fetchingCurrentUser && (
+      <div className={styled.allContainer}>
+        <Header />
+        <Container>
+          <div className={styled.app}>
+            <Switch>
+              <PublicRoute path="/register" restricted>
+                <RegistrPages />
+              </PublicRoute>
+              <PublicRoute path="/login" restricted>
+                <LoginPages />
+              </PublicRoute>
+              <PrivateRoute path="/contacts/add">
+                <ContactsAdd />
+              </PrivateRoute>
+              <PrivateRoute path="/contacts">
+                <ContactsPages />
+              </PrivateRoute>
+              <Redirect to="/contacts" />
+            </Switch>
+          </div>
         </Container>
-        <Container title="Contacts">
-          {filterCon.length >= 2 && <Filter />}
-          <Contacts />
-        </Container> */}
-        </Switch>
       </div>
-    </div>
+    )
   )
 }

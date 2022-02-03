@@ -7,14 +7,13 @@ import styled from "./Header.module.css"
 
 const Header=() => {
     
-    // const isLoggedIn = useSelector(getUserIsLoggedIn)
+    const isLoggedIn = useSelector(getUserIsLoggedIn)
     
     return (
         <div className={styled.container}>
             <div className={styled.navMenu}>
                 <h1 className={styled.title}>Phonebook</h1>
-                <UserMenu />
-                {/* {isLoggedIn && <UserMenu/>} */}
+                {isLoggedIn && <UserMenu/>}
             </div>
         </div>
         
