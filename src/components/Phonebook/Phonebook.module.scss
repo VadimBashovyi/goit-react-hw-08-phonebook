@@ -20,11 +20,10 @@
   border: 1px solid rgb(87, 190, 134);
   border-radius: 10px;
   background-color: #fff;
-}
-
-.button:hover,
-.button:focus {
-  color: rgb(87, 190, 134);
-  border-color: rgb(87, 190, 134);
-  background-color: #188ce8;
+  &:hover,
+  &:focus {
+    color: rgb(87, 190, 134);
+    border-color: rgb(87, 190, 134);
+    background-color: #188ce8;
+  }
 }

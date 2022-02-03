@@ -10,11 +10,11 @@
   padding: 8px 20px 0px;
 }
 .title {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     font-size: 20px;
   }
-  @media screen and (min-width: 768px) {
-    font-size: 20px;
+  @media screen and (max-width: 1023px) {
+    font-size: 30px;
   }
   font-size: 60px;
 }
