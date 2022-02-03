@@ -8,6 +8,7 @@ import PublicRoute from './components/PublicRoute'
 import PrivateRoute from './components/PrivateRoute'
 // import LoginIn from './components/LoginIn/LoginIn'
 import Header from './components/Header/Header'
+import { ToastContainer } from 'react-toastify'
 // import RegistrForm from './components/RegistrationForm/RegistrationForm'
 import styled from './App.css'
 import Container from './components/Container/Container'
@@ -19,11 +20,11 @@ import { fetchCurrentUser } from './redux/auth/auth-operations'
 import { getFetchingCurrentUser } from './redux/auth/auth-selectors'
 
 export default function App() {
-  const dispath = useDispatch()
+  const dispatch = useDispatch()
   const fetchingCurrentUser = useSelector(getFetchingCurrentUser)
   useEffect(() => {
-    dispath(fetchCurrentUser())
-  }, [dispath])
+    dispatch(fetchCurrentUser())
+  }, [dispatch])
 
   return (
     !fetchingCurrentUser && (
@@ -46,6 +47,17 @@ export default function App() {
               </PrivateRoute>
               <Redirect to="/contacts" />
             </Switch>
+            <ToastContainer
+              position="top-center"
+              autoClose={5000}
+              hideProgressBar={false}
+              newestOnTop={false}
+              closeOnClick
+              rtl={false}
+              pauseOnFocusLoss
+              draggable
+              pauseOnHover
+            />
           </div>
         </Container>
       </div>
