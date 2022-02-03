@@ -32,9 +32,10 @@ export const logIn = createAsyncThunk('authUser/logIn', async (credentials) => {
   try {
     const { data } = await axios.post('/users/login', credentials)
     token.set(data.token)
+    toast.success('Hello!')
     return data
   } catch (error) {
-    return error.message
+    alert('немає такого коритувача')
   }
 })
 export const logOut = createAsyncThunk('authUser/logOut', async () => {
